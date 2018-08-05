@@ -6,3 +6,13 @@ http://localhost:3000/
 
 graphql:
 http://localhost:5000/graphql
+
+
+{
+  players{
+    id
+    name
+    score
+    time
+  }
+}
