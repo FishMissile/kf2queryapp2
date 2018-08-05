@@ -1,5 +1,10 @@
+```
+yarn
+cd client
+yarn
 
-to launch run "yarn dev" from root folder
+yarn dev
+```
 
 client:
 http://localhost:3000/
