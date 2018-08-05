@@ -6,8 +6,8 @@ http://localhost:3000/
 
 graphql:
 http://localhost:5000/graphql
-
-query
+```
+query:
 ```
 {
   players{
@@ -17,4 +17,5 @@ query
     time
   }
 }
+```
 ```
