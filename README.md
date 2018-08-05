@@ -8,7 +8,6 @@ graphql:
 http://localhost:5000/graphql
 ```
 query:
-```
 {
   players{
     id
@@ -17,5 +16,4 @@ query:
     time
   }
 }
-```
 ```
