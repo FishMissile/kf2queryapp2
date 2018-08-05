@@ -44,7 +44,7 @@ displayPlayers(){
   } else{
     return data.players.map(player =>{
       return(
-        <li>{player.name}</li>
+        <option key={player.id} value={player.id}>{player.name}</option>
       )
     })
   }
