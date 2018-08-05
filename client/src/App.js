@@ -40,7 +40,7 @@ class App extends Component {
 displayPlayers(){
   var data = this.props.data;
   if(data.loading){
-    return(<div>loading players</div>)
+    return(<option disabled>loading players</option>)
   } else{
     return data.players.map(player =>{
       return(
