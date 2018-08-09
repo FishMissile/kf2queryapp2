@@ -18,7 +18,7 @@ app.use('/graphql', graphqlHTTP({
   graphiql: true
 }))
 
-app.get('/', (req, res) => res.send('src/index'))
+app.get('/', (req, res) => res.send('client/src/index'))
 /* // API calls
 app.get('/api/hello', (req, res) => {
   res.send({ express: testinfo.info1 });
