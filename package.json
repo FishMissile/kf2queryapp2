@@ -17,7 +17,9 @@
     "heroku-postbuild": "cd client && npm install && npm install --only=dev --no-shrinkwrap && npm run build"
   },
   "dependencies": {
+    "apollo-client": "^2.3.7",
     "cors": "^2.8.4",
+    "ejs": "^2.6.1",
     "express": "^4.16.3",
     "express-graphql": "^0.6.12",
     "gamedig": "^1.0.46",

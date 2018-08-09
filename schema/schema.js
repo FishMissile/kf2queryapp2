@@ -15,7 +15,7 @@ var state;
 Gamedig.query(
   {
     type: "killingfloor2",
-    host: "177.54.146.18"
+    host: "176.57.163.24"
   },
   function(e, state) {
     if (e) console.log("Server is offline");
@@ -23,6 +23,7 @@ Gamedig.query(
     for (let index = 0; index < state.players.length; index++) {
       playerlist.push(state.players[index]);
       playerlist[index].id = index;
+      console.log(index)
     }
     console.log(playerlist);
   }
