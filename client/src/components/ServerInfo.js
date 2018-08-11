@@ -1,17 +1,17 @@
 import React from 'react';
 import {Component } from 'react';
 import {graphql} from 'react-apollo';
-import {getPlayersQuery} from './queries';
+import {getServerInfoQuery} from './queries';
 
-class PlayerList extends Component {
-    displayPlayers(){
+class ServerInfo extends Component {
+    displayServerInfo(){
         var data = this.props.data;
         if(data.loading){
-            return( <div>Loading players...</div> );
+            return( <div>Loading server information...</div> );
         } else {
-            return data.players.map(player => {
+            return data.serverinfo.map(server => {
                 return(
-                    <li key={player.id} >{player.name}</li>
+                    <li key={server.id} >{server.name}</li>
                 );
             })
         }
@@ -21,11 +21,11 @@ class PlayerList extends Component {
         return(
             <div>
                 <ul id="book-list">
-                    {this.displayPlayers()}
+                    {this.displayServerInfo()}
                 </ul>
             </div>
         );
     }
 }
 
-export default graphql(getPlayersQuery)(PlayerList);
+export default graphql(getServerInfoQuery)(ServerInfo);

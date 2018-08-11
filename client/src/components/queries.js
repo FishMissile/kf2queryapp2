@@ -8,6 +8,16 @@ const getPlayersQuery = gql`
         }
     }
 `;
+const getServerInfoQuery = gql`
+    {
+        serverinfo {
+            servername
+            id
+            ip
+            map
+            difficulty
+        }
+    }
+`;
 
-
-export {getPlayersQuery};
+export {getPlayersQuery, getServerInfoQuery};

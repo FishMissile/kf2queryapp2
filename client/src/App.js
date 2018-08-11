@@ -3,11 +3,12 @@ import { Component } from "react";
 import ApolloClient from "apollo-boost";
 import {ApolloProvider} from "react-apollo";
 import PlayerList from './components/PlayerList';
+import ServerInfo from './components/ServerInfo';
 import logo from "./logo.svg";
 import "./App.css";
 
 const client = new ApolloClient({
-  uri: 'http://localhost:5000/graphql'
+  uri: 'https://kf2queryapp.herokuapp.com/graphql'
 });
 
 class App extends Component {
@@ -19,6 +20,7 @@ class App extends Component {
             <img src={logo} className="App-logo" alt="logo" />
             <h1 className="App-title">[Welcome to React]</h1>
           </header>
+         {/*  <ServerInfo /> */}
           <PlayerList />
         </div>
       </ApolloProvider>
