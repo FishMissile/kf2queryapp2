@@ -1,26 +1,38 @@
 import React from "react";
 import { Component } from "react";
 import ApolloClient from "apollo-boost";
-import {ApolloProvider} from "react-apollo";
-import PlayerList from './components/PlayerList';
-import logo from "./logo.svg";
+import { ApolloProvider } from "react-apollo";
+import PlayerList from "./components/PlayerList";
+import ServerList from "./components/ServerList";
 import "./App.css";
 
 const client = new ApolloClient({
-  uri: 'http://localhost:5000/graphql'
+  uri: "http://localhost:5000/graphql"
 });
 
 class App extends Component {
-    render() {
+  render() {
     return (
       <ApolloProvider client={client}>
         <div className="App">
           <header className="App-header">
-            <img src={logo} className="App-logo" alt="logo" />
-            <h1 className="App-title">[Welcome to React]</h1>
+            <h1 className="App-title">[KF2 Server Query]</h1>
           </header>
-          <PlayerList />
+          <ServerList />
+          <p align="center">
+          <div class="divTable blueTable">
+            <div class="divTableHeading">
+              <div class="divTableRow">
+                <div class="divTableHead">Name</div>
+              </div>
+            </div>
+          
+              <PlayerList />
+
+          </div>
+           </p>
         </div>
+       
       </ApolloProvider>
     );
   }
@@ -28,10 +40,8 @@ class App extends Component {
 
 export default App;
 
-
 /* const ApolloApp = (
   <ApolloProvider client={client}>
     <App />
   </ApolloProvider>
 ) */
- 

@@ -2,4 +2,74 @@ body {
   margin: 0;
   padding: 0;
   font-family: sans-serif;
+  background: #0A0000;
+  color: #B8B8B8;
+background: -moz-linear-gradient(left, #0A0000 0%, #400000 50%, #0D0202 100%);
+background: -webkit-linear-gradient(left, #0A0000 0%, #400000 50%, #0D0202 100%);
+background: linear-gradient(to right, #0A0000 0%, #400000 50%, #0D0202 100%);
+text-align: center;
 }
+
+div.blueTable {
+  border: 1px solid #A40000;
+  background-color: #0A0000;
+  width: 75%;
+  text-align: left;
+  border-collapse: collapse;
+  align-self: center;
+}
+.divTable.blueTable .divTableCell, .divTable.blueTable .divTableHead {
+  border: 1px solid #5C0000;
+  padding: 3px 2px;
+}
+.divTable.blueTable .divTableBody .divTableCell {
+  font-size: 13px;
+  color: #B8B8B8;
+}
+.divTable.blueTable .divTableRow:nth-child(even) {
+  background: #290000;
+}
+.divTable.blueTable .divTableHeading {
+  background: #B50000;
+  background: -moz-linear-gradient(top, #c74040 0%, #bc1919 66%, #B50000 100%);
+  background: -webkit-linear-gradient(top, #c74040 0%, #bc1919 66%, #B50000 100%);
+  background: linear-gradient(to bottom, #c74040 0%, #bc1919 66%, #B50000 100%);
+  border-bottom: 2px solid #3D0000;
+}
+.divTable.blueTable .divTableHeading .divTableHead {
+  font-size: 15px;
+  font-weight: bold;
+  color: #000000;
+  border-left: 2px solid #300000;
+}
+.divTable.blueTable .divTableHeading .divTableHead:first-child {
+  border-left: none;
+}
+
+.blueTable .tableFootStyle {
+  font-size: 14px;
+}
+.blueTable .tableFootStyle .links {
+	 text-align: right;
+}
+.blueTable .tableFootStyle .links a{
+  display: inline-block;
+  background: #1C6EA4;
+  color: #FFFFFF;
+  padding: 2px 8px;
+  border-radius: 5px;
+}
+.blueTable.outerTableFooter {
+  border-top: none;
+}
+.blueTable.outerTableFooter .tableFootStyle {
+  padding: 3px 5px; 
+}
+/* DivTable.com */
+.divTable{ display: table; }
+.divTableRow { display: table-row; }
+.divTableHeading { display: table-header-group;}
+.divTableCell, .divTableHead { display: table-cell;}
+.divTableHeading { display: table-header-group;}
+.divTableFoot { display: table-footer-group;}
+.divTableBody { display: table-row-group;}

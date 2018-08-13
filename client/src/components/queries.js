@@ -9,5 +9,17 @@ const getPlayersQuery = gql`
     }
 `;
 
+const getServersQuery = gql`
+    {
+        server(id:1) {
+            mapname
+            gamemode
+            servername
+            currentwave
+            maxwaves            
+        }
+    }
+`;
 
-export {getPlayersQuery};
+
+export {getPlayersQuery, getServersQuery};

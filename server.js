@@ -8,11 +8,6 @@ const cors = require('cors');
 
 app.use(cors())
 
-var testinfo = {
-  info1: "player1",
-  info2: "player2",
-  info3: "player3"
-}
 app.use('/graphql', graphqlHTTP({
   schema,
   graphiql: true
