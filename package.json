@@ -30,7 +30,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/FishMissile/kf2queryapp2.git"
+    "url": "https://github.com/esausilva/example-create-react-app-express.git"
+  },
+  "bugs": {
+    "url": "https://github.com/esausilva/example-create-react-app-express/issues"
   },
   "keywords": [
     "node",
