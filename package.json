@@ -21,7 +21,9 @@
     "express": "^4.16.3",
     "express-graphql": "^0.6.12",
     "gamedig": "^1.0.46",
-    "graphql": "^0.13.2"
+    "graphql": "^0.13.2",
+    "grunt-cli": "^1.2.0",
+    "lodash": "^4.17.10"
   },
   "devDependencies": {
     "concurrently": "^3.6.0"
