@@ -14,7 +14,7 @@ class ServerList extends Component {
                     <li>{data.server.servername}</li>
                     <li>{data.server.mapname}</li>
                     <li>{data.server.gamemode}</li>
-                    </div>
+                    </div> 
                 );
         }
     }
