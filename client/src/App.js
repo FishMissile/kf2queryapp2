@@ -19,7 +19,6 @@ class App extends Component {
             <h1 className="App-title">[KF2 Server Query]</h1>
           </header>
           <div align="center">
-            
               <ServerList />
             
             <p></p>
@@ -28,6 +27,8 @@ class App extends Component {
               <div className="divTableHeading">
                 <div className="divTableRow">
                   <div className="divTableHead">Name</div>
+                  <div className="divTableHead">Dosh</div>
+                  <div className="divTableHead">Time</div>
                 </div>
               </div>
 

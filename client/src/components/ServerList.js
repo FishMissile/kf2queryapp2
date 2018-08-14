@@ -10,8 +10,8 @@ class ServerList extends Component {
       return <div>Loading server info...</div>;
     } else {
       return (
-        <div className="server divTable serverInfo">
-          <div className="server divTableHeading">
+        <div className="divTable serverinfo">
+          <div className="divTableHeading">
             <div className="divTableRow">
               <div className="divTableHead">Server Info</div>
             </div>
@@ -23,6 +23,11 @@ class ServerList extends Component {
             <div className="divTableRow">
               <div className="divTableCell">
                 Current Map: {data.server.mapname}
+              </div>
+            </div>
+            <div className="divTableRow">
+              <div className="divTableCell">
+                Difficulty: {data.server.difficulty}
               </div>
             </div>
             <div className="divTableRow">
@@ -49,7 +54,7 @@ class ServerList extends Component {
   render() {
     console.log(this.props);
     return (
-      <div className="server divTable blueTable">{this.displayServers()}</div>
+      <div className="divTable serverinfo">{this.displayServers()}</div>
     );
   }
 }

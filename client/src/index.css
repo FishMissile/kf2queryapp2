@@ -15,27 +15,14 @@ body {
   text-align: center;
 }
 
-.server{
-  width: 25%;
-  text-align: center;
-}
 div.blueTable {
   border: 1px solid #a40000;
   background-color: #0a0000;
-  width: 50%;
+  width: 500px;
   text-align: center;
   border-collapse: collapse;
   align-self: center;
 }
-
-div.serverInfo {
-  border: 1px solid #a40000;
-  background-color: #0a0000;
-  width: 100%;
-  text-align: center;
-  border-collapse: collapse;
-  align-self: center;
-} 
 
 .divTable.blueTable .divTableCell,
 .divTable.blueTable .divTableHead {
@@ -118,4 +105,71 @@ div.serverInfo {
 .divTableBody {
   display: table-row-group;
   text-align: center;
+}
+
+
+
+div.serverinfo {
+  border: 1px solid #a40000;
+  background-color: #0a0000;
+  width: 350px;
+  text-align: center;
+  border-collapse: collapse;
+  align-self: center;
+}
+.divTable.serverinfo .divTableCell, .divTable.serverinfo .divTableHead {
+  border: 1px solid #5c0000;
+  padding: 3px 2px;
+  width: 100%;
+  align-self: center;
+}
+.divTable.serverinfo .divTableBody .divTableCell {
+   font-size: 13px;
+  color: #b8b8b8;
+  align-self: center;
+}
+.divTable.serverinfo .divTableRow:nth-child(even) {
+    background: #290000;
+  text-align: center;
+}
+.divTable.serverinfo .divTableHeading {
+  background: #b50000;
+  background: -moz-linear-gradient(top, #c74040 0%, #bc1919 66%, #b50000 100%);
+  background: -webkit-linear-gradient(
+    top,
+    #c74040 0%,
+    #bc1919 66%,
+    #b50000 100%
+  );
+  background: linear-gradient(to bottom, #c74040 0%, #bc1919 66%, #b50000 100%);
+  border-bottom: 2px solid #3d0000;
+}
+.divTable.serverinfo .divTableHeading .divTableHead {
+  font-size: 15px;
+  font-weight: bold;
+  color: #000000;
+  border-left: 2px solid #300000;
+}
+.divTable.serverinfo .divTableHeading .divTableHead:first-child {
+  border-left: none;
+}
+
+.serverinfo .tableFootStyle {
+  font-size: 14px;
+}
+.serverinfo .tableFootStyle .links {
+	 text-align: right;
+}
+.serverinfo .tableFootStyle .links a{
+  display: inline-block;
+  background: #1C6EA4;
+  color: #FFFFFF;
+  padding: 2px 8px;
+  border-radius: 5px;
+}
+.serverinfo.outerTableFooter {
+  border-top: none;
+}
+.serverinfo.outerTableFooter .tableFootStyle {
+  padding: 3px 5px; 
 }
