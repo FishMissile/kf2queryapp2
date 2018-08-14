@@ -11,18 +11,18 @@ class PlayerList extends Component {
     } else {
       return data.players.map(player => {
         return (
-          <div  class="divTableRow">
-            <div key={player.id} class="divTableCell">
+          <div key={player.id} className="divTableRow">
+            <div key={player.id} className="divTableCell">
               {player.name}
             </div>
           </div>
         );
       });
     }
-  }
+  } 
   render() {
     console.log(this.props);
-    return <div class="divTableBody">{this.displayPlayers()}</div>;
+    return <div className="divTableBody">{this.displayPlayers()}</div>;
   }
 }
 

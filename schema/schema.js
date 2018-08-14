@@ -25,7 +25,7 @@ var state;
 
 Gamedig.query({
   type: "killingfloor2",
-  host: "176.57.163.24"
+  host: "159.65.207.13"
 }).then(state => {
   for (let index = 0; index < state.players.length; index++) {
     playerlist.push(state.players[index]);

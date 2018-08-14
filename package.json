@@ -9,18 +9,13 @@
   },
   "license": "MIT",
   "scripts": {
-    "client": "cd client && yarn start",
-    "server": "nodemon server.js",
-    "dev": "concurrently --kill-others-on-fail \"yarn server\" \"yarn client\"",
-    "dev:server": "cd client && yarn build && cd .. && yarn start",
-    "start": "node server.js",
-    "heroku-postbuild": "cd client && npm install && npm install --only=dev --no-shrinkwrap && npm run build"
+    "start": "node index.js",
+    "test": "node test.js"
   },
   "engines": {
-    "node": "8.11.x"
+    "node": "8.9.1"
   },
   "dependencies": {
-    "apollo-client": "^2.3.7",
     "cors": "^2.8.4",
     "ejs": "^2.6.1",
     "express": "^4.16.3",

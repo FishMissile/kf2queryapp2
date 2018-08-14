@@ -7,7 +7,7 @@ import ServerList from "./components/ServerList";
 import "./App.css";
 
 const client = new ApolloClient({
-  uri: "http://localhost:5000/graphql"
+  uri: "https://warm-tundra-43181.herokuapp.com/graphql"
 });
 
 class App extends Component {
@@ -18,21 +18,23 @@ class App extends Component {
           <header className="App-header">
             <h1 className="App-title">[KF2 Server Query]</h1>
           </header>
-          <ServerList />
-          <p align="center">
-          <div class="divTable blueTable">
-            <div class="divTableHeading">
-              <div class="divTableRow">
-                <div class="divTableHead">Name</div>
-              </div>
-            </div>
-          
-              <PlayerList />
+          <div align="center">
+            
+              <ServerList />
+            
+            <p></p>
 
+            <div className="divTable blueTable">
+              <div className="divTableHeading">
+                <div className="divTableRow">
+                  <div className="divTableHead">Name</div>
+                </div>
+              </div>
+
+              <PlayerList />
+            </div>
           </div>
-           </p>
         </div>
-       
       </ApolloProvider>
     );
   }
