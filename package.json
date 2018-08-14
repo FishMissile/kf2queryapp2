@@ -17,7 +17,7 @@
     "heroku-postbuild": "cd client && npm install && npm install --only=dev --no-shrinkwrap && npm run build"
   },
   "engines": {
-    "node": "8.11.1"
+    "node": "8.11.x"
   },
   "dependencies": {
     "apollo-client": "^2.3.7",
@@ -33,10 +33,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/esausilva/example-create-react-app-express.git"
-  },
-  "bugs": {
-    "url": "https://github.com/esausilva/example-create-react-app-express/issues"
+    "url": "https://github.com/FishMissile/kf2queryapp2.git"
   },
   "keywords": [
     "node",
