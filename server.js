@@ -1,6 +1,5 @@
 const express = require('express');
 const path = require('path');
-const lodash = require('lodash');
 const app = express();
 const port = process.env.PORT || 5000;
 const graphqlHTTP = require('express-graphql');
