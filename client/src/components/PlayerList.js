@@ -10,9 +10,7 @@ class PlayerList extends Component {
     super(props);
     var data = this.props.data;
     this.state = {
-          data:{
-            
-          }
+          data: data
     }
   }
   displayPlayers() {
